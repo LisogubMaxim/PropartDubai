@@ -1,0 +1,43 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.importantPoweOfAttorneyPage {
+  @include fColumn;
+  gap: 24px;
+
+  padding: 64px 0;
+  & > h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  &__content {
+    display: flex;
+    gap: 16px;
+    height: 122px;
+
+    & > .blockContainer {
+      flex: 40%;
+      & > img {
+        position: absolute;
+        right: 24px;
+
+        top: 27px;
+        opacity: 0.1;
+      }
+      & h3 {
+        font-size: 22px;
+
+        font-weight: 500;
+      }
+      & > p {
+        color: $greyText;
+
+        font-size: 14px;
+
+        max-width: 514px;
+
+        line-height: 16.41px;
+      }
+    }
+  }
+}

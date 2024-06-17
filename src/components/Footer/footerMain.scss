@@ -1,0 +1,176 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/values.scss";
+
+.footerMain {
+    padding-top: 156px;
+    padding-bottom: 18px;
+
+    background: none;
+
+    &__list {
+        @include fSpaceB;
+    }
+
+    &__descr {
+        border-bottom: 1px solid #f1f1f1;
+        padding: 47px 0 25px 0;
+
+        &-descr {
+            color: #222;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        > p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+
+            color: #717171;
+        }
+    }
+
+    &__item {
+        &:nth-child(1) {
+            > p {
+                max-width: 211px;
+                margin: 20px 0;
+                line-height: 24px;
+            }
+        }
+
+        &-logos {
+            @include itemsCenter;
+            column-gap: 16px;
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__listLink {
+        display: flex;
+        column-gap: 160px;
+    }
+
+    &__itemLink {
+        &-link {
+            transition: 0.15s;
+
+            &:hover {
+                color: #dba77b;
+            }
+        }
+
+        &-info {
+            max-width: 130px;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: 400;
+            transition: 0.15s;
+
+            &:hover {
+                color: #dba77b;
+            }
+        }
+
+        > span {
+            &:not(:last-child) {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+
+                color: #717171;
+
+                margin-bottom: 5px;
+            }
+        }
+
+        > a {
+            color: black;
+        }
+
+        > a {
+            font-size: 14px;
+        }
+
+        @include fColumn;
+        gap: 20px;
+    }
+
+    &__listCertificate {
+        @include fColumn;
+        gap: 20px;
+    }
+
+    &__itemCertificate {
+        width: 210px;
+
+        &:hover {
+            div:last-child {
+                background: #dba77b;
+                color: white;
+            }
+        }
+
+        > a {
+            @include itemsCenter;
+            justify-content: space-between;
+        }
+
+        div {
+            transition: 0.2s;
+            border-radius: 6px;
+            border: 1px solid #f1f1f1;
+            height: 43px;
+            @include itemsCenter;
+        }
+
+        &-img {
+            padding: {
+                left: 10px;
+                right: 10px;
+            }
+        }
+
+        &-text {
+            padding: {
+                left: 20px;
+                right: 20px;
+            }
+
+            color: #717171;
+
+            &.trade {
+                padding: {
+                    left: 17px;
+                    right: 17px;
+                }
+
+                width: 100%;
+            }
+        }
+
+        &.button {
+            margin-top: 60px;
+
+            > a {
+                @include itemsFullCenter;
+
+                width: 100%;
+                height: 43px;
+                gap: 15px;
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+        padding-top: 24px;
+
+        > p {
+            color: $orangeBackgroud;
+        }
+    }
+}

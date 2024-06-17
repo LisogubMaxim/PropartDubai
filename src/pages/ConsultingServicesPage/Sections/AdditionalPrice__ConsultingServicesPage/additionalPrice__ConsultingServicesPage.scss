@@ -1,0 +1,82 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.additionalPriceConsultingServicesPage {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+  & > .blockContainer {
+    flex: 40%;
+    gap: 16px;
+  }
+}
+.additionalPriceConsultingServicesPageItem {
+  &__buttonBox {
+    @include fColumn;
+    gap: 18px;
+
+    & > .button {
+      @include itemsCenter;
+      padding: 8px 16px;
+      justify-content: space-between;
+
+      border-radius: 16px;
+      background: #fff;
+
+      color: #000;
+
+      font-size: 18px;
+    }
+    & > span {
+      @include itemsCenter;
+      gap: 16px;
+      & > span {
+        color: #fff;
+
+        font-size: 16px;
+      }
+    }
+  }
+  &__getHelp {
+    @include itemsCenter;
+    gap: 12px;
+    color: white;
+  }
+  &__activities,
+  &__opportunities {
+    @include fColumn;
+    gap: 12px;
+
+    color: #fff;
+    font-weight: 600;
+
+    & > span {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      & > div {
+        @include itemsCenter;
+        gap: 8px;
+
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+  }
+  &__top {
+    font-size: 22px;
+  }
+  &__price {
+    color: $greyText;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  &__text {
+    color: $greyText;
+    line-height: normal;
+  }
+}

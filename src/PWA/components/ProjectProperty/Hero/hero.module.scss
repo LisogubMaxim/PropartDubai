@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+
+  .imgContainer {
+    height: 552px;
+
+    .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .heroContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .bottomContent {
+    bottom: 20px;
+
+    .mainTitle {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 110%;
+      color: white;
+
+    }
+
+    .heroText {
+      margin-top: 4px;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      color: #b7b8bc
+    }
+  }
+}
+
+.darkerImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 2;
+}

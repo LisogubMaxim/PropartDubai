@@ -1,0 +1,84 @@
+@import "../../../styles/values.scss";
+@import "../../../styles/mixins.scss";
+
+.button {
+  @include itemsCenter;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: #ffffff;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &--orange {
+    border-radius: 8px;
+
+    background: $orangeBackgroud;
+  }
+
+  &--grey {
+    border: 1px solid #f1f1f130;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    backdrop-filter: blur(16px);
+    // background: $blackBackgroud;
+    background: $blackGradiend;
+  }
+  &--whiteBlure {
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+
+    background: rgba(255, 255, 255, 0.13);
+
+    backdrop-filter: blur(12.899999618530273px);
+  }
+  &--white {
+    color: #000;
+
+    font-size: 16px;
+    padding: 0 8px;
+    height: 48px;
+    justify-content: space-between;
+    border-radius: 8px;
+    border-bottom: 2px solid #cacaca;
+
+    transition: all 0.2s;
+  }
+  &--darkBlue {
+    border-radius: 16px;
+    background: #191c38;
+  }
+  &--activeFilter {
+    border: 1px solid $orangeBackgroud;
+    color: $orangeBackgroud;
+  }
+  &--inactiveFilter {
+    border: 1px solid #f1f1f1;
+    color: black;
+  }
+  &--activeMainFilter {
+    background: #a7a7a765;
+  }
+  &--inactiveMainFilter {
+    border: 1px solid #cccccc;
+    color: white;
+  }
+  &--darkBlue {
+    border-radius: 16px;
+    background: #191c38;
+  }
+}
+@media (hover: hover) {
+  .button--white {
+    &:hover {
+      background-color: #f4f4f4;
+    }
+  }
+}

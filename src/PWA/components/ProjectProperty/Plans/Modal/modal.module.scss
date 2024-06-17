@@ -1,0 +1,29 @@
+.modal {
+  .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .modalTitle {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.125rem;
+      line-height: 110%;
+      font-weight: 600;
+    }
+  }
+
+  .modalPlan {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .descriptiveBtns {
+    max-width: 500px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+  }
+}

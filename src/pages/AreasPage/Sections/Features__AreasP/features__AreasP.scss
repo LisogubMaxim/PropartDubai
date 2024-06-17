@@ -1,0 +1,57 @@
+.features__AreasP {
+  padding-top: 38px;
+  padding-bottom: 156px;
+
+  .featuresContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
+    gap: 32px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.text-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: 1px solid #f1f1f1;
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+
+  line-height: 26px;
+  &.centered-text {
+    text-align: center;
+    justify-content: center;
+  }
+
+  &:first-child {
+    border-top-left-radius: 6px;
+  }
+
+  &:nth-child(2) {
+    border-top-right-radius: 6px;
+  }
+
+  &:nth-last-child(2) {
+    border-bottom-left-radius: 6px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 6px;
+  }
+}
+
+.double-height {
+  grid-row-end: span 2;
+  padding: 9px 22px 12px 33px;
+}

@@ -1,0 +1,93 @@
+@import "../../../../styles/mixins.scss";
+
+.aboutProject {
+    margin-top: 40px;
+
+    &__content {
+        @include fColumn;
+        gap: 15px;
+
+        &-title {
+            color: #222;
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        &-descr {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #717171;
+            // width: 92%;
+            padding-right: 62px;
+        }
+
+        &-uploaders {
+            padding-top: 25px;
+
+            & .swiper-slide {
+                width: max-content;
+            }
+        }
+
+        &-image {
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+
+                background: linear-gradient(
+                    9deg,
+                    rgba(0, 0, 0, 0.65) 13.35%,
+                    rgba(1, 0, 0, 0) 41.92%,
+                    rgba(0, 0, 0, 0) 65.85%,
+                    rgba(0, 0, 0, 0.39) 89.47%
+                );
+            }
+        }
+
+        &-text {
+            position: absolute;
+            left: 12px;
+            bottom: 9px;
+
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &-img {
+            width: 200px;
+            height: 125px;
+            border-radius: 8px;
+        }
+
+        &-count {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+
+            @include itemsCenter;
+            gap: 3px;
+
+            > span {
+                color: #fff;
+                font-size: 10px;
+            }
+        }
+
+        &-type {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}

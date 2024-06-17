@@ -1,0 +1,120 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/values.scss";
+
+.headerSecond {
+    position: relative;
+
+    background: none;
+
+    left: 0;
+    right: 0;
+
+    z-index: 3;
+
+    &.floorPopupActive {
+        position: sticky;
+        z-index: -1;
+    }
+
+    .headerFirst__dropMenuBg-content {
+        margin: {
+            top: -4px;
+            left: 64px;
+            right: 64px;
+        }
+    }
+
+    &__wrap {
+        padding: 15px 0 5px 0;
+
+        &-list {
+            @include itemsCenterSpaceB;
+
+            &:last-child {
+                padding-top: 7px;
+                align-items: flex-end;
+            }
+        }
+
+        &-phone {
+            > a {
+                color: #222;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        &-item {
+            &.contact {
+                @include itemsCenter;
+                column-gap: 22px;
+
+                div:nth-child(1) {
+                    @include itemsCenter;
+                    column-gap: 15px;
+                }
+
+                div:nth-child(2) {
+                    @include itemsCenter;
+                    column-gap: 5px;
+                }
+
+                .header__wrap-select {
+                    .header__wrap-btnSelect {
+                        background: none;
+                        color: black;
+                        border: none;
+                    }
+
+                    .header__wrap-btnDropSelect {
+                        background: white;
+                        color: black;
+                        border: none;
+                        border-radius: 0px;
+
+                        &:hover {
+                            background: #f1f1f1;
+                        }
+                    }
+                    .header__wrap-dropContent {
+                        border: 1px solid #f1f1f1;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        box-shadow: 1px 1px 5px #888888;
+                    }
+                }
+            }
+
+            // margin-right: -23px;
+        }
+
+        &-switcherSelect {
+            background-color: none;
+
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+
+            outline: none;
+
+            cursor: pointer;
+        }
+
+        &-itemButton {
+            > button {
+                padding: 0 24px;
+                height: 34px;
+
+                > a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &__bottomLine {
+        border-bottom: 1px solid #f1f1f1;
+
+        margin-bottom: 20px;
+    }
+}

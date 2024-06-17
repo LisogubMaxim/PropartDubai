@@ -1,0 +1,45 @@
+.categorySwitcher {
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 36px;
+    row-gap: 16px;
+    margin-bottom: 16px;
+
+    .active {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      color: #333863;
+      font-weight: 600;
+      text-decoration: underline 0.5px;
+      cursor: pointer;
+    }
+
+    .notActive {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #b7b8bc;
+      cursor: pointer;
+    }
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.25rem;
+    color: #0f1121;
+
+    p {
+      .show {
+        font-weight: 500;
+        color: #333863;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .hide {
+  //   overflow: hidden;
+  //   height: 60px;
+  // }
+}

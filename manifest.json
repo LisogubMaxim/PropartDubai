@@ -1,0 +1,61 @@
+{
+  "background_color": "#ffffff",
+  "description": "ProPart Dubai: Your Gateway to Elite Real Estate in the UAE.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ProPart",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "ProPart",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/icons/512x512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icons/192x192.png",
+      "sizes": "192x192"
+    }
+  ],
+  "id": "id",
+  "display_override": [
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "lang": "en",
+  "launch_handler": {
+    "mode": "default"
+  },
+  "screenshots": [
+    {
+      "src": "/icons/800x600.png",
+      "sizes": "800x600",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/1024x768.png",
+      "sizes": "1024x768",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/1280x720.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "sync": {
+    "mode": "synchronize",
+    "minInterval": 86400
+  },
+  "categories": ["Real Estate"],
+  "iarc_rating_id": "ABCD1234",
+  "periodic_sync": [{
+    "minInterval": 86400
+  }],
+  "prefer_related_applications": true,
+  "push_notifications": true,
+  "scope_extensions": ["*://*/"]
+}

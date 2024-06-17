@@ -1,0 +1,21 @@
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  .detail {
+    height: 48px;
+    padding: 11px;
+    border: 1px solid #f1f1f1;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    .detailText {
+      line-height: 1.375rem;
+      color: #6f707a;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../../styles/mixins.scss";
+
+.approach {
+  @include fColumn;
+
+  width: 100%;
+  height: auto;
+  padding: 30px 64px 30px 64px;
+
+  gap: 12px;
+
+  background: #dba77b;
+  h2,
+  p {
+    color: white;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 65px;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+  }
+}

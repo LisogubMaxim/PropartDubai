@@ -1,0 +1,74 @@
+@import "../../styles/mixins.scss";
+
+.infoListPercent {
+  &__blocks {
+    @include itemsCenter;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    &-block {
+      flex: 45%;
+      height: 519px;
+
+      padding: 40px;
+
+      &:last-child {
+        padding: 48px;
+      }
+    }
+
+    &-title {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 38.4px;
+    }
+
+    &-descr {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18.75px;
+
+      color: #717171;
+    }
+
+    &-blockInfo {
+      @include itemsCenter;
+      gap: 24px;
+
+      background: #f1f1f1;
+      border-radius: 16px;
+
+      padding: 19px 16px;
+
+      &:last-child {
+        align-items: flex-start;
+      }
+    }
+
+    &-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+
+      color: #717171;
+    }
+
+    &-percent {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 26.4px;
+    }
+
+    &-item {
+      @include itemsCenterSpaceB;
+
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d2d2d2;
+    }
+
+    &-list {
+      height: 100%;
+      @include fColumnSpaceB;
+    }
+  }
+}

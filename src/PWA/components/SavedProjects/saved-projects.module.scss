@@ -1,0 +1,130 @@
+.header {
+  margin-bottom: 20px;
+
+  .headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .changeBtn {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      color: #333863;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .headerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    .search {
+      position: relative;
+      flex-grow: 1;
+      border: 1px solid #f1f1f1;
+      border-radius: 40px;
+      overflow: hidden;
+
+      .searchIcon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 12px;
+        left: 16px;
+      }
+
+      .searchInput {
+        width: 100%;
+        padding: 13px 16px 13px 48px;
+      }
+    }
+
+    .sortBtn {
+      width: 44px;
+      height: 44px;
+    }
+    .sortBtnActive {
+      background-color: #333863;
+    }
+  }
+}
+
+.mainTitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333863;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+
+  .project {
+    position: relative;
+    height: 284px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .projectImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .projectContent {
+      padding: 14px 16px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 4px;
+      column-gap: 16px;
+      z-index: 5;
+
+      .projectName {
+        flex-basis: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 110%;
+        color: white;
+      }
+
+      .projectText {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #b7b8bc;
+      }
+    }
+  }
+}
+
+.darkerImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 48%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: 2;
+}
+
+.noProjectsText {
+  text-align: center;
+  font-size: 0.875rem;
+}

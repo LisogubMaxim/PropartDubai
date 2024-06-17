@@ -1,0 +1,133 @@
+@import "../../styles/mixins.scss";
+
+.popupFloorPlan {
+
+    &__content {
+        background: white;
+        height: auto;
+        width: 100%;
+        border-radius: 6px;
+
+        margin: {
+            top: 30px;
+            left: 6px;
+            right: 6px;
+        }
+
+        padding: 20px;
+
+        &-closseWrapper {
+            display: flex;
+            justify-content: right;
+            padding: 10px 10px 0 0;
+        }
+
+        &-headerWrapper {
+            border: 1px solid rgba(113, 113, 113, 0.35);
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        &-imageWrapper {
+            @include itemsFullCenter;
+            margin-bottom: 38px;
+
+            img {
+                max-height: 280px;
+                width: auto;
+            }
+        }
+
+        &-listPrice {
+            @include itemsCenter;
+            flex-wrap: wrap;
+            column-gap: 18px;
+            row-gap: 7px;
+        }
+
+        &-title {
+            color: #222;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &-wrapper {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &-listPayment {
+            @include itemsCenter;
+            flex-wrap: wrap;
+            column-gap: 18px;
+            row-gap: 7px;
+
+            overflow: hidden;
+            overflow-y: auto;
+            max-height: 170px;
+
+            &::-webkit-scrollbar {
+                // display: none;
+            }
+        }
+
+        &-item {
+            @include fColumn;
+            gap: 2px;
+            width: 100%;
+            flex: 1;
+
+            > span {
+                color: #222;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        &-type {
+            padding: 0 13px;
+            height: 40px;
+            border-right: 1px solid #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-typeRight {
+            padding: 0 5px;
+            height: 40px;
+            border-left: 1px solid #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-value {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+            flex: 1;
+            padding: 0 13px;
+        }
+
+        &-infoWrapper {
+            border-radius: 8px;
+            border: 1px solid #f1f1f1;
+            background: #fff;
+            width: 180px;
+            height: 40px;
+            @include itemsCenter;
+
+            span {
+                color: #222;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}

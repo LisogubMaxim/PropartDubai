@@ -1,0 +1,72 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/values.scss";
+
+.mainServices {
+  @include fColumn;
+  gap: 24px;
+
+  &__itemBottom {
+    @include fColumn;
+    gap: 12px;
+  }
+
+  padding-bottom: 64px;
+  &__content,
+  &__static {
+    display: flex;
+    gap: 16px;
+
+    & > .blockContainer {
+      flex: 30%;
+      font-size: 16px;
+      &--static {
+        & > span {
+          gap: 16px;
+
+          color: #191c38;
+
+          font-size: 32px;
+
+          font-weight: 700;
+        }
+      }
+      & > span {
+        display: flex;
+      }
+
+      & > img {
+        position: absolute;
+
+        right: -48px;
+
+        top: -48px;
+        opacity: 0.1;
+      }
+    }
+  }
+  &__content {
+    height: 138px;
+  }
+  &__static {
+    height: 107px;
+  }
+  &__item {
+    &Top {
+      align-items: center;
+      justify-content: space-between;
+      color: #b3b3b3;
+      font-size: 24px;
+    }
+    &Bottom {
+      color: $greyText;
+
+      font-size: 14px;
+      & > span {
+        color: #000;
+
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+  }
+}

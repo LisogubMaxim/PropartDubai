@@ -1,0 +1,16 @@
+@import "../../styles/mixins.scss";
+
+.tmPage {
+  .consultingTop > .container {
+    justify-content: flex-start;
+  }
+
+  &__texts-wrapper {
+    @include fColumn;
+    gap: 18px;
+  }
+
+  .helpForm {
+    padding-bottom: 64px;
+  }
+}

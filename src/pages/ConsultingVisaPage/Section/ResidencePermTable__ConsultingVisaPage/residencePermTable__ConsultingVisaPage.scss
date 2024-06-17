@@ -1,0 +1,49 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.residencePermConsultingVisaPage {
+  & > .registBusinessPoweOfAttorneyPage__content {
+    display: grid;
+    grid-template-columns: 2fr 0.6fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 8px;
+    height: auto;
+  }
+  &__item {
+    border-radius: 16px;
+    padding: 24px;
+    @include itemsCenter;
+
+    &--darkBlue {
+      background: #191c38;
+      color: white;
+      &:not(&:first-child) {
+        justify-content: center;
+      }
+    }
+    &--halfBorderGrey,
+    &--borderGrey,
+    &--otherBorderGrey {
+      background: #fff;
+    }
+    &--otherBorderGrey,
+    &--halfBorderGrey {
+      color: $greyText;
+      text-align: center;
+      justify-content: center;
+    }
+    &--borderGrey {
+      border: 2px solid #9194b0;
+    }
+    &--halfBorderGrey {
+      border-top: 1px solid #cacaca;
+
+      border-right: 1px solid #cacaca;
+
+      border-bottom: 1px solid #cacaca;
+    }
+    &--otherBorderGrey {
+      border: 1px solid #cacaca;
+    }
+  }
+}

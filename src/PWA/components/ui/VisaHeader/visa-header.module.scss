@@ -1,0 +1,14 @@
+.visaHeader {
+  padding: 16px 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 110%;
+    color: #333863;
+  }
+}

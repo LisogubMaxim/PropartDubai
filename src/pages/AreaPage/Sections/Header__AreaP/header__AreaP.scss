@@ -1,0 +1,56 @@
+.areaHeader {
+  height: 815px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 258px;
+
+  h1,
+  p {
+    color: white;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  &_header-info {
+    max-width: 612px;
+    padding-bottom: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &_navigation {
+    display: flex;
+
+    .navigationButton {
+      width: 150px;
+      height: 40px;
+      padding: 12px 55px;
+      border: 0;
+      gap: 10px;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+
+      &.active {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}

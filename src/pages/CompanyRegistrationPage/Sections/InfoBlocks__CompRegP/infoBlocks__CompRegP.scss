@@ -1,0 +1,61 @@
+@import "../../../../styles/mixins.scss";
+
+.infoBlocksCompP {
+  margin: 64px 0;
+
+  @include itemsCenter;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  > div {
+    flex: 45%;
+    height: 208px;
+  }
+
+  &__block {
+    &:first-child {
+      background: #dba77b;
+    }
+
+    &:last-child {
+      background: #fff;
+    }
+
+    &-bg {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      border-radius: 24px;
+    }
+
+    &-title {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.18px;
+
+      color: white;
+
+      &.another {
+        color: #dba77b;
+      }
+    }
+
+    &-descr {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.41px;
+
+      color: white;
+
+      &.another {
+        color: black;
+      }
+    }
+
+    &-texts {
+      @include fColumn;
+      gap: 16px;
+    }
+  }
+}

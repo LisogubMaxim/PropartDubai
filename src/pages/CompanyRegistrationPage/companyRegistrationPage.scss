@@ -1,0 +1,19 @@
+.companyRegistrationPage {
+  .infoListPercent {
+    margin-top: 64px;
+  }
+
+  &__helpForm {
+    padding-bottom: 64px;
+  }
+
+  .corporateAccount {
+    &:first-child {
+      padding-top: 42px;
+    }
+  }
+
+  .blocksCompPage {
+    padding-bottom: 64px;
+  }
+}

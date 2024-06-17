@@ -1,0 +1,246 @@
+@import "../../../../styles/values.scss";
+@import "../../../../styles/mixins.scss";
+
+.developerPage {
+  & .helpForm {
+    margin-top: 76px;
+  }
+  & > .container {
+    & > section:nth-child(4) {
+      margin-top: 77px;
+    }
+  }
+}
+.searchDev {
+  display: flex;
+  justify-content: space-between;
+  gap: 219px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 504px;
+  border-radius: 16px;
+
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 16px;
+    pointer-events: none;
+  }
+
+  margin: {
+    top: 10px;
+    bottom: 76px;
+  }
+  &__left {
+    width: 40%;
+    @include fColumn;
+    gap: 34px;
+
+    z-index: 1;
+
+    margin: 0 auto;
+
+    text-align: center;
+    & > span {
+      & > h1 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 56.25px;
+
+        color: white;
+      }
+      & > p {
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+    & > h2 {
+      margin: {
+        top: 23px;
+        bottom: 44px;
+      }
+
+      font-size: 32px;
+      line-height: normal;
+
+      color: $orangeBackgroud;
+    }
+    & .mapPage__searchInput {
+      background: url("/assets/UI/searchIconWhite.svg") 12px 14px no-repeat
+        #9f9f9e;
+      background-position: 12px 14px;
+      height: 45px;
+      width: 100%;
+
+      padding-left: 34px;
+      flex: none;
+
+      color: white;
+      border: 1px solid rgba(241, 241, 241, 0.17);
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  &__dropDownListBox {
+    position: relative;
+  }
+  &__dropDownList {
+    position: absolute;
+
+    @include fColumn;
+
+    width: 100%;
+    height: 167px;
+
+    top: 53px;
+    left: 0;
+
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    border-radius: 6px;
+    // border: 1px solid rgba(241, 241, 241, 0.17);
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+  &__dropDownListItem {
+    display: flex;
+
+    padding: {
+      top: 4.5px;
+      bottom: 4.5px;
+      left: 29px;
+    }
+
+    border: 1px solid transparent;
+
+    color: $greyText;
+    font-size: 14px;
+    line-height: 19px;
+
+    cursor: pointer;
+  }
+  &__topItem {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-between;
+    flex: 50%;
+
+    padding: 25px;
+
+    border-radius: 6px;
+
+    & > span {
+      align-self: flex-end;
+      & > h4,
+      p {
+        color: white;
+      }
+      & > p {
+        font-size: 12px;
+        line-height: 19.2px;
+      }
+    }
+    & > button {
+      align-self: flex-start;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .searchDev__dropDownListItem {
+    background: #9f9f9e;
+    color: white;
+
+    &:hover {
+      background-color: $orangeBackgroud;
+      border-color: #d09e72;
+    }
+  }
+}
+
+.mapPage__wrapper {
+  position: relative;
+
+  background: #9f9f9e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 6px;
+  padding-left: 20px;
+
+  > img {
+    position: absolute;
+    left: 7px;
+  }
+
+  &-input {
+    background: #9f9f9e;
+    background: none;
+    background-position: 12px 14px;
+    height: 45px;
+    width: 86%;
+
+    padding-left: 8px;
+    flex: none;
+
+    border: 1px solid rgba(241, 241, 241, 0);
+
+    color: white;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  &-buttonWrapper {
+    background: #9f9f9e;
+    height: 45px;
+    @include itemsFullCenter;
+
+    padding-right: 7px;
+    border-radius: 6px;
+  }
+
+  &-button {
+    background: white;
+
+    border-radius: 6px;
+
+    width: 73px;
+    height: 36px;
+
+    @include itemsFullCenter;
+
+    flex-shrink: 0;
+  }
+
+  &-btn {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+
+    color: black;
+  }
+}

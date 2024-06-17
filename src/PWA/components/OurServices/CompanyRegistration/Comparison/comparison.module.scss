@@ -1,0 +1,38 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  column-gap: 46px;
+  row-gap: 56px;
+  margin-bottom: 32px;
+
+  .itemsTitle {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333863;
+    margin-bottom: -20px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .itemImg {
+      width: 32px;
+      height: 30px;
+    }
+
+    .itemText {
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+    }
+  }
+}
+
+.bottomText {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-bottom: 48px;
+}

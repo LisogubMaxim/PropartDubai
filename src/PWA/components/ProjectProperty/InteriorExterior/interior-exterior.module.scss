@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+
+  .btn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 110%;
+    color: #b7b8bc;
+    cursor: pointer;
+
+    input {
+      display: none;
+    }
+  }
+
+  .btn:has(input:checked) {
+    color: #333863;
+    text-decoration: underline;
+  }
+}

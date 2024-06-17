@@ -1,0 +1,94 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.theProcessPoweOfAttorneyPage {
+  @include fColumn;
+  gap: 64px;
+  &__top {
+    @include fColumn;
+    gap: 24px;
+  }
+  &__top {
+    @include fColumn;
+    gap: 24px;
+
+    &Text {
+      @include fColumn;
+      gap: 12px;
+      & > h2 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 120%;
+      }
+      & > p {
+        color: $greyText;
+
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+  }
+  &__bottom,
+  &__content {
+    display: flex;
+    gap: 16px;
+
+    & > .blockContainer {
+      & > p {
+        color: #4b4b4b;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+      }
+      & > img {
+        position: absolute;
+        right: -48px;
+
+        top: -48px;
+
+        opacity: 0.1;
+      }
+      & > span {
+        @include fColumn;
+        gap: 12px;
+
+        & > h3 {
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 119%;
+          letter-spacing: -0.44px;
+        }
+        & > p {
+          color: $greyText;
+
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: -0.28px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    height: 235px;
+    & > div {
+      flex: 30%;
+    }
+  }
+  &__content {
+    flex-wrap: wrap;
+
+    & > div {
+      height: 208px;
+      flex: 30%;
+    }
+  }
+  &Item {
+    &__whyUs {
+      color: #000;
+
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 119%;
+      letter-spacing: -0.64px;
+    }
+  }
+}

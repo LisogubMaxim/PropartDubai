@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@media (max-width: 768px) {
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+
+  * {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  a {
+    font-weight: inherit;
+    line-height: normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: normal;
+  }
+
+  button {
+    font-family: revert;
+    font-size: revert;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  input {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+  input:focus {
+    outline: none;
+    border-color: transparent;
+  }
+}
+
+// .body-scroll-disabled {
+//   overflow: hidden;
+// }
+
+.main-container {
+  position: relative;
+  max-width: 768px;
+  margin-inline: auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.main-container:has(.menu-bar) {
+  padding-bottom: 130px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(15, 17, 33, 0.1);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(15, 17, 33, 0.1);
+  box-shadow: 0px 4px 20px 0px rgba(15, 17, 33, 0.1);
+}
+
+.circle-btn {
+  min-width: 3rem;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body:has(.modal-window) {
+  overflow: hidden;
+}
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100svh;
+  background-color: white;
+  overflow-y: auto;
+  z-index: 8000;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.skeleton-loader {
+  width: 100%;
+  height: 100%;
+  background-color: #c7c7c7;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.darker-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 48%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: 2;
+}

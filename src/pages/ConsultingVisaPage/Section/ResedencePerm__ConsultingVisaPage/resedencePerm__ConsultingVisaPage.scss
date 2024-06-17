@@ -1,0 +1,30 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.resedencePermConsultingVisaPage {
+  & > .registBusinessPoweOfAttorneyPage__content {
+    height: 381px;
+
+    & > .blockContainer {
+      & > span {
+        @include fColumn;
+        gap: 16px;
+
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 120%;
+        & > span {
+          color: $greyText;
+          font-size: 14px;
+
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      & > div {
+        @include fColumn;
+        gap: 16px;
+      }
+    }
+  }
+}

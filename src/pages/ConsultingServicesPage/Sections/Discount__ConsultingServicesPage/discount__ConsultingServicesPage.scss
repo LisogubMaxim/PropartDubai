@@ -1,0 +1,35 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.discountConsultingServicesPage {
+  margin: 64px 0;
+
+  display: flex;
+  gap: 16px;
+
+  height: 216px;
+  & > .blockContainer {
+    flex: 30%;
+    &:last-child {
+      flex: 64%;
+    }
+    & > .button--darkBlue {
+      @include itemsCenter;
+      padding: 16px;
+      justify-content: space-between;
+    }
+  }
+  &__item {
+    &TopText {
+      font-size: 24px;
+    }
+    &BottomText {
+      color: $greyText;
+      line-height: normal;
+      font-size: 14px;
+    }
+    &:last-child {
+      flex: 64%;
+    }
+  }
+}

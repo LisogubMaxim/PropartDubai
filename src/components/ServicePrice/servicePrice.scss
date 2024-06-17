@@ -1,0 +1,42 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/values.scss";
+
+.servicePrice {
+  @include fColumn;
+  gap: 24px;
+
+  margin-top: 64px;
+  & > .blockContainer {
+    gap: 24px;
+  }
+  &__item {
+    &Title {
+      font-size: 24px;
+    }
+    &Price {
+      @include itemsCenter;
+      gap: 16px;
+
+      font-size: 24px;
+
+      & > span:last-child {
+        color: $orangeBackgroud;
+
+        font-size: 18px;
+      }
+    }
+    &Advantages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
+}
+.advantage {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+  background: #f1f1f1;
+}

@@ -1,0 +1,66 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.consultingVisaPage {
+  & > .consultingTop {
+    & > .container {
+      justify-content: start;
+      gap: 205px;
+    }
+  }
+  & .helpForm:last-child {
+    padding-bottom: 125px;
+  }
+  & .registBusinessPoweOfAttorneyPage__content {
+    height: 361px;
+
+    & > .blockContainer {
+      & > div {
+        @include fColumn;
+        gap: 24px;
+      }
+      & > h3 {
+        font-size: 18px;
+
+        font-weight: 700;
+        line-height: normal;
+      }
+      &--orange {
+        flex: 50%;
+        & > h3 {
+          color: white;
+        }
+        & .optionConsultingVisaPage__item {
+          & > span {
+            color: white;
+
+            & > span {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.optionConsultingVisaPage__item {
+  @include itemsCenter;
+  gap: 16px;
+  & > span {
+    @include fColumn;
+    gap: 8px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    & > span {
+      color: $greyText;
+
+      font-size: 14px;
+
+      font-weight: 400;
+
+      line-height: normal;
+    }
+  }
+}

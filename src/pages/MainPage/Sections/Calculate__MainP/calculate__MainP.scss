@@ -1,0 +1,233 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.calculatPage {
+  margin: 156px 0;
+
+  > h4 {
+    margin-bottom: 42px;
+  }
+
+  & .swiper-slide {
+    width: max-content;
+  }
+
+  &__content {
+    @include fSpaceB;
+
+    column-gap: 30px;
+
+    position: relative;
+
+    &-img {
+      transition: 0.15s;
+      cursor: pointer;
+
+      &:hover {
+        fill: #dba77b;
+      }
+
+      &.active {
+        fill: #dba77b;
+      }
+    }
+
+    &-info {
+      border: 1px solid #f1f1f1;
+      border-radius: 6px;
+      height: 630px;
+
+      padding: 32px 15px;
+
+      > p {
+        font-weight: 500;
+      }
+
+      flex: 1;
+    }
+
+    &-bedroomsList {
+      @include itemsCenter;
+      justify-content: space-between;
+
+      margin-top: 12px;
+    }
+
+    &-mapIsland {
+      width: 100%;
+    }
+
+    &-bedroomsItem {
+      width: 100%;
+      height: 45px;
+      @include itemsFullCenter;
+
+      border: 1px solid #f1f1f1;
+      color: #717171;
+
+      transition: 0.3s;
+
+      cursor: pointer;
+
+      &.active {
+        background: $orangeBackgroud;
+        color: #fff;
+      }
+
+      &:first-child {
+        border-radius: 6px 0px 0px 6px;
+      }
+
+      &:last-child {
+        border-radius: 0px 6px 6px 0px;
+      }
+
+      &:hover {
+        background: $orangeBackgroud;
+        color: #fff;
+      }
+    }
+
+    &-typeList {
+      @include itemsCenter;
+
+      column-gap: 9px;
+      margin: 32px 0;
+    }
+
+    &-typeItem {
+      padding: 10px;
+      border: 1px solid #f1f1f1;
+      border-radius: 6px;
+
+      transition: 0.3s;
+
+      @include fColumn;
+      gap: 38px;
+
+      cursor: pointer;
+
+      flex: 1;
+
+      &.active {
+        background: $orangeBackgroud;
+
+        > img {
+          filter: brightness(0) invert(1);
+        }
+
+        > span {
+          color: #fff;
+        }
+      }
+
+      &:hover {
+        background: $orangeBackgroud;
+
+        > img {
+          filter: brightness(0) invert(1);
+        }
+
+        > span {
+          color: #fff;
+        }
+      }
+    }
+
+    &-averagePrice {
+      margin-top: 30px;
+
+      @include itemsCenter;
+      justify-content: center;
+      column-gap: 8px;
+
+      > div {
+        width: 11px;
+        height: 11px;
+        background: #ffd449;
+        border-radius: 50%;
+      }
+    }
+
+    &-slider {
+      max-width: 60%;
+
+      position: relative;
+    }
+
+    &-info {
+      max-width: 40%;
+    }
+  }
+
+  &__slider {
+    &-texts {
+      padding: 40px 46px;
+      @include fColumn;
+      gap: 5px;
+
+      > h2 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 56.25px;
+
+        color: white;
+        z-index: 1;
+      }
+
+      > span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.2px;
+
+        color: white;
+
+        z-index: 1;
+      }
+    }
+
+    &-bg {
+      background-position: center;
+      background-size: cover;
+
+      border-radius: 6px;
+
+      &::before {
+        position: absolute;
+        content: "";
+
+        background: linear-gradient(
+          9deg,
+          rgba(0, 0, 0, 0.65) 13.35%,
+          rgba(1, 0, 0, 0) 41.92%,
+          rgba(0, 0, 0, 0) 65.85%,
+          rgba(0, 0, 0, 0.39) 89.47%
+        );
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 6px;
+
+        pointer-events: none;
+      }
+    }
+
+    &-buttons {
+      @include itemsCenter;
+      column-gap: 14px;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      padding: 20px;
+
+      z-index: 1;
+
+      > button {
+        padding: 15px;
+      }
+    }
+  }
+}

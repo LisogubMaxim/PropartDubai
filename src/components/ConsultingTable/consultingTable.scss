@@ -1,0 +1,33 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/values.scss";
+
+.consultingTable {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: repeat(7, auto);
+  gap: 8px;
+
+  margin-bottom: 70px;
+  &__item {
+    @include fColumn;
+    justify-content: center;
+
+    padding: 16px;
+    border-radius: 12px;
+
+    border: 1px solid #d2d2d2;
+    background: #fff;
+
+    font-size: 14px;
+    line-height: normal;
+
+    &--orange {
+      background-color: $orangeBackgroud;
+      border: none;
+      color: white;
+    }
+    &--orangeBorder {
+      border-color: $orangeBackgroud;
+    }
+  }
+}

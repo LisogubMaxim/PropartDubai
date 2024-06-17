@@ -1,0 +1,65 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+.consultingServicesPage {
+  &__ourServices {
+    padding-top: 64px;
+  }
+  & .infoListPercent {
+    padding: {
+      bottom: 64px;
+      top: 116px;
+    }
+  }
+
+  .blocksCompPage {
+    padding-bottom: 64px;
+  }
+}
+.telegramConsultingServicesPage {
+  margin-top: 64px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  & > div {
+    flex: 40%;
+    height: 260px;
+  }
+
+  &__item {
+    flex: 40%;
+
+    border-radius: 24px;
+
+    &Top {
+      @include itemsCenter;
+      justify-content: space-between;
+
+      font-size: 32px;
+      font-weight: 600;
+
+      & > span {
+        font-size: 72px;
+        font-weight: 700;
+      }
+    }
+    &Text {
+      color: $greyText;
+
+      font-size: 14px;
+    }
+    &--telegram {
+      background: url("/assets/ConsultingServicePage/telegramOnScreen.webp")
+        no-repeat;
+    }
+    &--clock {
+      background: url("/assets/ConsultingServicePage/handAndClock.webp")
+        no-repeat;
+    }
+    &--telegram,
+    &--clock {
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

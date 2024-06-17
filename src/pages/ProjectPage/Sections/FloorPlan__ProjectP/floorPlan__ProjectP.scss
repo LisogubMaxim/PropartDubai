@@ -1,0 +1,152 @@
+@import "../../../../styles/mixins.scss";
+
+.floorPlan {
+    margin-top: 65px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 22px;
+    }
+
+    &__floorPlan {
+        width: 100%;
+
+        &-head {
+            @include itemsCenter;
+            gap: 40px;
+        }
+
+        &-click {
+            color: #717171;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &-floorList {
+            margin-top: 15px;
+
+            @include itemsCenter;
+            flex-wrap: wrap;
+            gap: 21px;
+            width: 100%;
+
+            .popupFloorPlan__content {
+                width: 650px;
+
+                &-imageWrapper {
+                    img {
+                        height: 450px;
+                        width: auto;
+                    }
+                }
+            }
+
+            .popup__content {
+                padding-top: 25px;
+            }
+        }
+
+        &-texts {
+            position: absolute;
+            bottom: 12px;
+            left: 6px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        &-floorItem {
+            position: relative;
+            box-shadow: 1px 1px 10px rgba(136, 136, 136, 0.1);
+            border-radius: 6px;
+            height: 300px;
+            width: 200px;
+            @include fColumn;
+            justify-content: space-between;
+            background: white;
+
+            @include fColumn;
+            gap: 8px;
+
+            border-radius: 6px;
+            border: 1px solid #f1f1f1;
+            cursor: pointer;
+            padding: 12px 6px;
+        }
+
+        &-floorImg {
+            @include itemsFullCenter;
+            margin-bottom: 38px;
+            transition: transform 0.3s;
+            overflow: hidden;
+
+            img {
+                transition: 0.2s;
+                max-height: 200px;
+                width: auto;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.015);
+                }
+            }
+        }
+
+        &-price {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+
+            display: flex;
+            gap: 5px;
+        }
+
+        &-info {
+            @include itemsCenterSpaceB;
+
+            span {
+                font-size: 12px;
+                font-weight: 400;
+
+                color: #8f8f8f;
+            }
+        }
+
+        &-title {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 32.81px;
+
+            margin-bottom: 16px;
+        }
+
+        &-selectList {
+            @include itemsCenter;
+            gap: 7px;
+        }
+
+        &-selectItem {
+            font-size: 16px;
+            font-weight: 500;
+            color: #222222;
+
+            padding: 0 16px;
+            height: 42px;
+            border-radius: 12px;
+            background: white;
+            border: 1px solid #f1f1f1;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.active {
+                color: white;
+                background: #dba77b;
+            }
+        }
+    }
+}

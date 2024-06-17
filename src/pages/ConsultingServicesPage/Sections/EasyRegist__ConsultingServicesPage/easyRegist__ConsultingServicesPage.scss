@@ -1,0 +1,69 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.easyRegistConsultingServicesPage {
+  margin-bottom: 70px;
+  &__textBox {
+    @include fColumn;
+
+    padding: 42px 0;
+
+    align-items: flex-start;
+    gap: 16px;
+
+    & > h2 {
+      font-size: 32px;
+
+      font-weight: 500;
+      line-height: 120%;
+    }
+    & > p {
+      color: #717171;
+      line-height: normal;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    & > .blockContainer {
+      flex: 30%;
+    }
+  }
+}
+.easyRegistItem {
+  &__top {
+    @include itemsCenter;
+
+    justify-content: space-between;
+
+    padding: 16px;
+
+    border-radius: 14px;
+    background: #f1f1f1;
+
+    font-size: 24px;
+
+    & > span {
+      @include itemsCenter;
+      gap: 16px;
+
+      color: $orangeBackgroud;
+      font-size: 16px;
+    }
+  }
+  &__text {
+    @include fColumn;
+    gap: 16px;
+    & > h3 {
+      font-size: 22px;
+      font-weight: 400;
+    }
+    & > p {
+      color: #717171;
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}

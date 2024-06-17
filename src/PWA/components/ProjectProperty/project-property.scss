@@ -1,0 +1,42 @@
+.project-property {
+  padding-bottom: 90px;
+  &__section.main-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  > :nth-child(6) {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+
+  &__section:last-child {
+    padding-bottom: 40px;
+  }
+
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__second-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 110%;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__main-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #676767;
+  }
+
+  &__more-link {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+    color: #333863;
+    text-decoration: underline;
+  }
+}

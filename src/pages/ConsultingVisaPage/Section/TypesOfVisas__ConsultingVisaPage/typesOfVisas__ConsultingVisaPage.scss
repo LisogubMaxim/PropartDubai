@@ -1,0 +1,151 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.typesOfVisasConsultingVisaPage {
+  @include fColumn;
+  gap: 24px;
+
+  padding-bottom: 64px;
+
+  & > h2 {
+    font-size: 32px;
+
+    font-weight: 500;
+    line-height: 120%;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 16px;
+    row-gap: 24px;
+    & > .blockContainer {
+      border: 1px solid #cacaca;
+      gap: 24px;
+
+      &--visas {
+        & > span:first-child {
+          @include fColumn;
+          gap: 16px;
+
+          color: #5e5e5e;
+
+          font-size: 14px;
+          & > span {
+            font-size: 20px;
+
+            font-weight: 700;
+          }
+        }
+        & > span:nth-child(2) {
+          @include fColumn;
+          gap: 16px;
+
+          font-size: 18px;
+          font-weight: 700;
+          & > div {
+            @include fColumn;
+            gap: 12px;
+            & > div {
+              @include itemsCenter;
+              gap: 10px;
+
+              color: $greyText;
+
+              font-size: 14px;
+
+              font-weight: 400;
+
+              letter-spacing: -0.28px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__itemRight {
+    @include fColumn;
+    height: 100%;
+    justify-content: space-between;
+    &Top {
+      @include fColumn;
+      gap: 16px;
+      & > div:first-child {
+        display: flex;
+        color: white;
+        width: 214px;
+        height: 42px;
+        padding: 8px 16px;
+
+        align-items: center;
+
+        border-radius: 16px;
+        background: #191c38;
+      }
+      & > div:last-child {
+        & > h3 {
+          font-size: 18px;
+
+          font-weight: 700;
+        }
+        & > p {
+          color: $greyText;
+
+          font-size: 14px;
+
+          letter-spacing: -0.28px;
+        }
+      }
+    }
+    &Bottom {
+      display: flex;
+      gap: 36px;
+      & > span {
+        @include fColumn;
+        gap: 12px;
+      }
+      &GreyText {
+        color: $greyText;
+
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.32px;
+      }
+      &StrongText {
+        font-size: 22px;
+        font-weight: 700;
+
+        &:first-child {
+          @include itemsCenter;
+          gap: 10px;
+        }
+      }
+      &OrangeText {
+        color: $orangeBackgroud;
+
+        font-size: 22px;
+
+        font-weight: 700;
+      }
+    }
+  }
+  &__itemOr {
+    @include fColumn;
+    gap: 16px;
+    & > div:first-child {
+      @include itemsCenter;
+      justify-content: center;
+      gap: 16px;
+      & > hr {
+        width: 100%;
+        border: 1px solid #d4d4d4;
+      }
+    }
+    & > div:last-child {
+      color: $greyText;
+
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}

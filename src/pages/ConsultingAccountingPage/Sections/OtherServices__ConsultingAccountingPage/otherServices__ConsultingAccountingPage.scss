@@ -1,0 +1,45 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.otherServicesConsultingAccountingPage {
+  @include fColumn;
+  gap: 26px;
+
+  padding: 65px 0;
+  & > h2 {
+    font-size: 32px;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    & > .blockContainer {
+      flex: 30%;
+      gap: 24px;
+      height: 102px;
+
+      color: $greyText;
+      font-size: 14px;
+      & > img {
+        position: absolute;
+        right: -47px;
+
+        top: -42px;
+
+        opacity: 0.1;
+      }
+    }
+  }
+
+  &__item {
+    &Top {
+      @include itemsCenter;
+      gap: 12px;
+
+      font-size: 22px;
+
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../styles/values.scss";
+
+.areasWithMapPage {
+  .searchDev__left {
+    margin-top: -11px;
+
+    width: 100%;
+  }
+
+  .mapPage__searchInput {
+    background: url("/assets/UI/searchIconGrey.svg") 12px 14px no-repeat white;
+    border: 1px solid #cccccc;
+    color: #717171;
+
+    &::placeholder {
+      color: #717171;
+    }
+  }
+
+  @media (hover: hover) {
+    .searchDev__dropDownListItem {
+      background: white;
+      color: #717171;
+
+      &:hover {
+        background-color: $orangeBackgroud;
+        border-color: #d09e72;
+        color: white;
+      }
+    }
+  }
+
+  &__map {
+    height: 660px;
+  }
+  & > .container {
+    & > img {
+      max-width: none;
+      width: 100%;
+    }
+  }
+  &__topProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+    grid-auto-rows: minmax(303px, auto);
+    gap: 36px;
+
+    margin: {
+      top: 25px;
+      bottom: 156px;
+    }
+  }
+}

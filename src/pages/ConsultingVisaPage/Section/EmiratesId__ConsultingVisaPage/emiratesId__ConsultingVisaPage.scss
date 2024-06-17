@@ -1,0 +1,37 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.emiratesId__ConsultingVisaPage {
+  padding-top: 0;
+
+  & .registBusinessPoweOfAttorneyPage__content {
+    display: grid;
+    height: auto;
+    grid-template-columns: 614px 1fr;
+    grid-template-rows: 184px 184px;
+
+    margin-top: 13px;
+    & > .blockContainer {
+      font-size: 36px;
+
+      font-weight: 700;
+
+      & > span {
+        color: $greyText;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+      }
+      &:first-child {
+        grid-row: 1 / span 2;
+        padding: 16px;
+        & > img {
+          position: static;
+          opacity: 1;
+          border-radius: inherit;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

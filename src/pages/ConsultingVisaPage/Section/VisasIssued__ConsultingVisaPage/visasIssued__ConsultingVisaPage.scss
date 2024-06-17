@@ -1,0 +1,48 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.visasIssuedConsultingVisaPage {
+  display: flex;
+  gap: 16px;
+  height: 364px;
+  & > .blockContainer {
+    flex: 40%;
+
+    & > span {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+    }
+    & > div {
+      @include fColumn;
+      gap: 24px;
+    }
+    &:last-child {
+      background: url("/assets/ConsultingVisaPage/building.webp") no-repeat
+        center;
+      background-size: cover;
+    }
+  }
+  &__item {
+    @include fColumn;
+    gap: 12px;
+
+    & > span {
+      color: $greyText;
+      font-size: 14px;
+    }
+    & > div {
+      display: flex;
+      gap: 16px;
+    }
+    &Advantage {
+      color: white;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: #dba77b;
+
+      font-size: 18px;
+    }
+  }
+}

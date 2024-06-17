@@ -1,0 +1,49 @@
+@import "../../../../styles/mixins.scss";
+
+.developerMainPage {
+  &__about {
+    margin-top: 76px;
+
+    @include fSpaceB;
+    gap: 132px;
+
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 37.5px;
+
+      margin-bottom: 12px;
+    }
+
+    &-img {
+      height: 418px;
+    }
+
+    &-texts {
+      max-width: 50%;
+    }
+
+    &-slider {
+      width: 70%;
+    }
+
+    &-img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__item {
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.41px;
+
+      color: #818181;
+
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.filters {
+
+  .filtersHeader {
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 20;
+
+    .filtersTitle {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333863;
+    }
+
+    .rightButtons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .clearAllBtn {
+        font-family: "Nunito", sans-serif;
+        margin-top: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333863;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .searchBtn {
+        min-width: 48px;
+        min-height: 48px;
+        background-color: #d6d7e0;
+        border-radius: 50%;
+        cursor: default;
+      }
+  
+      .searchBtnActive {
+        background-color: #333863;
+        cursor: pointer;
+      }
+  
+      .icon {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+      }
+    }
+
+  }
+
+  .filtersContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .formGroup {
+
+      .formLabel {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

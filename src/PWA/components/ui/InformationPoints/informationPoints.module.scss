@@ -1,0 +1,25 @@
+.InformationPoints {
+    // width: 350px;
+    .title {
+        font-size: 16px;
+        color: #222222;
+        margin-bottom: 16px;
+    }
+
+    .points {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .point {
+            color: #333863;
+            font-size: 14px;
+            border: #d6d7e0 1px solid;
+            border-radius: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+    }
+}

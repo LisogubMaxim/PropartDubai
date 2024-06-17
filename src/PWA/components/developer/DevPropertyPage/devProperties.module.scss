@@ -1,0 +1,58 @@
+.section {
+  margin-bottom: 20px;
+}
+
+.demonstrate_imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.contact_us {
+  p {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+
+  .searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    .searchInput {
+      width: 100%;
+      height: 48px;
+      padding: 8px 16px 8px 48px;
+      border: 1px solid #f1f1f1;
+      border-radius: 40px;
+
+      &::placeholder {
+        color: #b7b8bc;
+        font-size: 16px;
+      }
+    }
+    .icon {
+      position: absolute;
+      top: 12px;
+      left: 16px;
+    }
+  }
+
+  .sortBtn {
+    width: 44px;
+    height: 44px;
+  }
+  .sortBtnActive {
+    background-color: #333863;
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../../../styles/mixins.scss";
+
+.documentAccAudP {
+  padding: 42px 0 64px 0;
+
+  &__texts {
+    @include fColumn;
+    gap: 16px;
+
+    margin-bottom: 106px;
+
+    &-title {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38.4px;
+    }
+
+    &-descr {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.41px;
+      color: #717171;
+    }
+  }
+
+  &__blocks {
+    @include fColumn;
+    gap: 24px;
+
+    &-wrapper {
+      @include itemsCenter;
+      gap: 17px;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    &-block {
+      &:first-child {
+        flex: 52%;
+      }
+
+      img {
+        width: 424px;
+        height: 243px;
+
+        border-radius: 24px;
+      }
+    }
+
+    &-imgBg {
+      position: absolute;
+      top: -40px;
+      right: -75px;
+      opacity: 0.1;
+
+      img {
+        width: 336px;
+        height: 287px;
+      }
+    }
+
+    &-textsWrapper {
+      height: 100%;
+      @include fColumnSpaceB;
+    }
+
+    &-number {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 56.25px;
+
+      color: #717171;
+    }
+
+    &-texts {
+      @include fColumn;
+      gap: 16px;
+    }
+
+    &-title {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 25.78px;
+    }
+
+    &-descr {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.41px;
+
+      color: #717171;
+    }
+  }
+}

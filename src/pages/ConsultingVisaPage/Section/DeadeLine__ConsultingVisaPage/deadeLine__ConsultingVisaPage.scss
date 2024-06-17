@@ -1,0 +1,14 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+.deadeLineConsultingVisaPage {
+  & .blockContainer {
+    & > span {
+      @include itemsCenter;
+      gap: 8px;
+    }
+    & > img {
+      right: -48px;
+      top: -48px;
+    }
+  }
+}

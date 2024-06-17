@@ -1,0 +1,19 @@
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  .header_text {
+    flex-grow: 1;
+    font-size: 12px;
+    color: #333863;
+  }
+
+  .menu_btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+}

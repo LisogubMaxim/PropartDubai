@@ -1,0 +1,48 @@
+.w-icon-swiper {
+  overflow: visible;
+  margin-bottom: 40px;
+
+  justify-content: center;
+  align-items: center;
+
+  .w-icon-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+
+    .my-slide .info-imp img {
+      position: absolute;
+      top: 2px;
+      right: 3px;
+    }
+
+    .slide-image {
+      display: block;
+    }
+
+    .slide-title {
+      font-size: 16px;
+      line-height: 110%;
+      font-weight: 300;
+    }
+
+    .slide-text {
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      color: #6f707a;
+    }
+  }
+
+  .swiper-scrollbar {
+    margin-bottom: -24px;
+
+    &-drag {
+      background-color: #333863;
+    }
+  }
+}

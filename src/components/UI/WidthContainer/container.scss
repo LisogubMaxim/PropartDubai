@@ -1,0 +1,11 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/values.scss";
+
+.container {
+  max-width: 100%;
+
+  padding: {
+    left: 64px;
+    right: 64px;
+  }
+}

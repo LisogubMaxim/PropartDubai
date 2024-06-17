@@ -1,0 +1,63 @@
+@import "../../../../styles/mixins.scss";
+.aboutPage {
+  background-image: linear-gradient(
+      66.77deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.453615) 30.99%,
+      rgba(0, 0, 0, 0) 57.93%
+    ),
+    linear-gradient(
+      284.4deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.453615) 19.37%,
+      rgba(0, 0, 0, 0) 36.21%
+    ),
+    linear-gradient(
+      168.3deg,
+      rgba(0, 0, 0, 0.65) -3.63%,
+      rgba(0, 0, 0, 0) 31.1%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/assets/AboutUsPage/backgroundOne.jpg");
+
+  height: 815px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 159px;
+  padding-left: 175px;
+
+  & > span {
+    @include fColumn;
+    gap: 24px;
+  }
+  h1,
+  p {
+    color: white;
+  }
+  p {
+    width: 424px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: capitalize;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  &_header-info {
+    max-width: 400px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

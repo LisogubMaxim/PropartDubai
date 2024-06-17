@@ -1,0 +1,137 @@
+@import "../../styles/mixins.scss";
+
+.helpFormModal {
+  &__content {
+    width: 950px;
+
+    @include itemsCenter;
+    border-radius: 16px;
+
+    &-block {
+      height: 375px;
+
+      &:first-child {
+        background: linear-gradient(180deg, #191c38 0%, #0e1024 100%);
+        flex: 52.5%;
+        padding: 40px;
+
+        border-radius: 16px 0 0 16px;
+
+        @include fColumnSpaceB;
+      }
+
+      &:last-child {
+        position: relative;
+
+        background: white;
+        flex: 47.5%;
+        padding: 0 40px;
+
+        border-radius: 0 16px 16px 0;
+
+        @include fColumn;
+        justify-content: center;
+      }
+    }
+
+    &-texts {
+      @include fColumn;
+      gap: 20px;
+    }
+
+    &-title {
+      font-size: 31px;
+      font-weight: 700;
+      line-height: 45px;
+
+      color: white;
+      max-width: 300px;
+    }
+
+    &-descr {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 25px;
+
+      color: white;
+      max-width: 265px;
+    }
+
+    &-inputs {
+      @include fColumn;
+      gap: 11px;
+
+      margin-bottom: 19px;
+    }
+
+    &-close {
+      border-radius: 50%;
+    }
+
+    &-buttons {
+      @include fColumn;
+      gap: 10px;
+      margin-bottom: 27px;
+
+      > button {
+        width: 127px;
+        height: 38px;
+
+        @include itemsFullCenter;
+        border-radius: 8px;
+      }
+    }
+
+    &-btnSubText {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 11.72px;
+
+      color: #8f8f8f;
+    }
+
+    &-noInteres {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.41px;
+
+      color: #8f8f8f;
+
+      text-align: left;
+      border-bottom: 1px solid #8f8f8f;
+    }
+
+    &-imgGoogle {
+      box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.25);
+    }
+
+    &-closseWrapper {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 54%;
+
+  width: 48px;
+  height: 48px;
+  border: 5px solid #dba77b;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

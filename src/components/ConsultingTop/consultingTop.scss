@@ -1,0 +1,102 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/values.scss";
+
+.consultingTop {
+  height: 714px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & h1,
+  & p {
+    color: white;
+  }
+  & h1 {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  & p {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+  }
+  & > .container {
+    @include fColumn;
+    justify-content: space-around;
+    height: 100%;
+  }
+  &__topBox,
+  &__textBox {
+    @include fColumn;
+  }
+  &__topBox {
+    gap: 16px;
+
+    .button--whiteBlure {
+      width: 257px;
+    }
+  }
+  &__textBox {
+    gap: 24px;
+
+    max-width: 600px;
+
+    &-textWrapper {
+      color: white;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+
+      p {
+        color: white;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+      }
+    }
+  }
+  &__stepsContainer {
+    display: flex;
+    gap: 16px;
+  }
+  padding-top: 115px;
+}
+.consultingTopItem {
+  position: relative;
+  flex: 25%;
+  @include fColumn;
+  justify-content: space-between;
+  gap: 32px;
+
+  padding: 24px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+
+  background: rgba(255, 255, 255, 0.13);
+
+  backdrop-filter: blur(12.899999618530273px);
+
+  overflow: hidden;
+  & > img {
+    position: absolute;
+    right: -48px;
+
+    top: -48px;
+
+    opacity: 0.1;
+  }
+  & > span {
+    @include itemsCenter;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 24px;
+    height: 17px;
+  }
+  & > p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,25 @@
+.investorVisa {
+
+  .mainText {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: #6f707a;
+    margin-bottom: 24px;
+  }
+
+  .descriptiveButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .secondTitle {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+
+  .requirements {
+    margin-bottom: 32px;
+  }
+}

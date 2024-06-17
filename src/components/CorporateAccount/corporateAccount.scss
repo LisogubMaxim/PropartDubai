@@ -1,0 +1,69 @@
+@import "../../styles/mixins.scss";
+
+.corporateAccount {
+  @include itemsCenterSpaceB;
+
+  margin-bottom: 24px;
+
+  &--list {
+    @include itemsCenter;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    > div {
+      flex: 45%;
+      // height: 202px;
+      height: 145px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    button {
+      background: #191c38;
+
+      padding: 6px;
+
+      border-radius: 50%;
+    }
+  }
+
+  &__slide {
+    @include fColumnSpaceB;
+    height: 100%;
+
+    &-title {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 25.78px;
+    }
+
+    &-descr {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.41px;
+
+      color: #717171;
+    }
+
+    .button--darkBlue {
+      padding: 0 16px;
+
+      height: 56px;
+
+      width: 100%;
+
+      justify-content: space-between;
+    }
+  }
+}

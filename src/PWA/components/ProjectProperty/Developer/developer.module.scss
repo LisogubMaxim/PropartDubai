@@ -1,0 +1,48 @@
+.developer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  .qrCode {
+    position: relative;
+    padding: 12px;
+    width: 167px;
+    height: 167px;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+  }
+
+  .infoItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .item {
+      font-family: "Open Sans", sans-serif;
+      padding: 8px 8px;
+      height: 35px;
+      font-size: 14px;
+      line-height: 1.125rem;
+      color: #222;
+      border: 1px solid #f1f1f1;
+      border-radius: 8px;
+
+      .itemLink {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .about {
+    grid-column: span 2;
+    font-size: 0.75rem;
+    color: #b7b8bc;
+  }
+}

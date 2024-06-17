@@ -1,0 +1,41 @@
+.projectPage {
+    &__helpform {
+        margin-top: 100px;
+    }
+
+    &__listProject {
+        margin-top: 70px;
+
+        &-title {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: #222;
+            font-size: 28px;
+            font-weight: 500;
+        }
+    }
+}
+
+.projectPageWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    &__leftContent {
+        width: 62.5%;
+
+        &-left {
+            // position: sticky;
+            // top: 0;
+        }
+    }
+
+    &__rightContent {
+        width: 36%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

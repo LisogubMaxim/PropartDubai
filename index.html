@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- PWA -->
+  <link rel="manifest" href="./manifest.json" />
+  <script>
+    const CACHE = "pwabuilder-offline";
+
+    importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+
+    self.addEventListener("message", (event) => {
+      if (event.data && event.data.type === "SKIP_WAITING") {
+        self.skipWaiting();
+      }
+    });
+
+    workbox.routing.registerRoute(
+      new RegExp('/*'),
+      new workbox.strategies.StaleWhileRevalidate({
+        cacheName: CACHE
+      })
+    );
+  </script>
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" href="./public/icons/bigIcon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+
+  <!-- Basic SEO -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="author" content="Vero Casa" />
+  <meta name="title" content="ProPart Dubai Real Estate">
+  <meta name="description" content="ProPart Dubai: Your Gateway to Elite Real Estate in the UAE.">
+  <meta name="keywords"
+    content="ProPart, luxury properties, exclusive residences, high-end real estate, prestigious developments, prime locations, premium living, Dubai real estate, UAE properties, elite homes, luxury lifestyle, investment opportunities, gated communities, waterfront properties, iconic architecture, top-tier amenities, prestigious neighborhoods, skyline views, contemporary design, elite clientele, international standards">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <!-- /Basic SEO -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://propart.ae/">
+  <meta property="og:title" content="ProPart | Dubai Real Estate">
+  <meta property="og:description" content="ProPart Dubai: Your Gateway to Elite Real Estate in the UAE.">
+  <meta property="og:image" content="https://propart-images.s3.me-south-1.amazonaws.com/homeMain-AdKkTWSO+(1).png">
+
+  <meta property="og:image:alt" content="propartLogo" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://propart.ae/">
+  <meta property="twitter:title" content="ProPart | Dubai Real Estate">
+  <meta property="twitter:description" content="ProPart Dubai: Your Gateway to Elite Real Estate in the UAE.">
+  <meta property="twitter:image" content="https://propart-images.s3.me-south-1.amazonaws.com/homeMain-AdKkTWSO+(1).png">
+
+  <!-- /Open Graph / Facebook -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <!-- <link rel="icon" href="/assets/favicon.ico" /> -->
+
+
+  <!-- End Google Tag Manager -->
+
+  <title>ProPart: Your Space, Your Sanctuary | Real Estate in Dubai</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NGELN7FNL5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-NGELN7FNL5');
+</script>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QH6J37X" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

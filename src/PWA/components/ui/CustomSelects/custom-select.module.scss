@@ -1,0 +1,152 @@
+.placeholderText {
+  color: #6f707a;
+}
+
+.selectTop {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options {
+  position: absolute;
+  max-height: 400px;
+  top: 110%;
+  left: -1px;
+  right: -1px;
+  background-color: white;
+  border: 1px solid #cfcfd3;
+  border-radius: 6px;
+  overflow: auto;
+  z-index: 10;
+
+  .option + .option {
+    border-top: 1px solid #f1f1f1;
+  }
+
+  .option {
+
+    .optionLabel {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      &:has(.checkbox:disabled) {
+        color: grey;
+        background-color: #e7e7e7;
+        cursor: default;
+
+        .checkboxIcon {
+          background-color: #a4a8cc;
+        }
+      }
+    }
+
+    .checkbox {
+      display: none;
+    }
+
+    .checkbox:checked+.checkboxIcon {
+      background-color: #333863;
+    }
+
+    .checkboxIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid #b7b8bc;
+      border-radius: 4px;
+    }
+  }
+}
+
+.input {
+  display: none;
+}
+
+.selectBox {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #cfcfd3;
+  user-select: none;
+  cursor: pointer;
+}
+
+.radioSelect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  .item {
+    text-align: center;
+    user-select: none;
+
+    .label {
+      width: 100%;
+      display: inline-block;
+      padding: 21px 12px;
+      border-radius: 6px;
+      border: 1px solid #cfcfd3;
+      cursor: pointer;
+
+      &:has(.input:checked) {
+        color: white;
+        background-color: #333863;
+      }
+
+      &:has(.input:disabled) {
+        color: grey;
+        background-color: #e7e7e7;
+        cursor: default;
+      }
+    }
+  }
+
+  .itemSm {
+    flex-basis: 22%;
+  }
+
+  .itemLg {
+    flex-basis: 48%;
+  }
+}
+
+.rangeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  .rangeSelect {
+    position: relative;
+    border-radius: 10px;
+
+    .top {
+      padding: 9px 16px;
+      display: flex;
+      flex-direction: column;
+
+      .topPlaceholder {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: #b7b8bc;
+      }
+
+      .mainPlaceholder {
+        color: #6f707a;
+      }
+    }
+  }
+
+  .separator {
+    min-width: 16px;
+    height: 1px;
+    background-color: #cfcfd3;
+  }
+}

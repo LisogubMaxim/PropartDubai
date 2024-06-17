@@ -1,0 +1,76 @@
+@import '../../styles/mixins.scss';
+
+.paymentPlanProjectP {
+    &__content {
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #f1f1f1;
+        background: #fff;
+
+        @include fColumn;
+        gap: 15px;
+
+        margin: {
+            left: 200px;
+            right: 200px;
+          }
+
+        &-title {
+            color: #222;
+            font-family: Roboto;
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 35px;
+            row-gap: 15px;
+        }
+
+        &-item {
+            @include fColumn;
+            gap: 2px;
+
+            > span {
+                color: #222;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        &-type {
+            width: 37px;
+            height: 40px;
+            border-right: 1px solid #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-value {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+        }
+
+        &-infoWrapper {
+            border-radius: 8px;
+            border: 1px solid #f1f1f1;
+            background: #fff;
+            width: 105px;
+            height: 40px;
+            @include itemsCenter;
+
+            span {
+                color: #222;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}

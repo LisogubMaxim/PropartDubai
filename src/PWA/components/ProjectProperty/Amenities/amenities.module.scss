@@ -1,0 +1,33 @@
+.amenitiesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .moreLink {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: #333863;
+    text-decoration: underline;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+
+  .amenity {
+    flex-basis: 49%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .amenityText {
+      line-height: 1.375rem;
+    }
+  }
+}

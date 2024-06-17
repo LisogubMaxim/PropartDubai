@@ -1,0 +1,220 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.mapPage {
+  @include fColumn;
+  height: 100vh;
+
+  &.active {
+    height: 70vh;
+  }
+
+  &__upper {
+    transition: all 0.3s ease;
+
+    &.active {
+      transform: translateY(-200px);
+    }
+
+    &-header {
+      transition: all 0.3s ease;
+
+      &.active {
+        transform: translateY(-200px);
+      }
+    }
+  }
+
+  & .headerSecond__bottomLine {
+    margin-bottom: 12px;
+  }
+  & > .container {
+    padding: {
+      left: 24px;
+      right: 24px;
+    }
+  }
+  &__dataHandlers {
+    display: flex;
+    gap: 12px;
+
+    margin-bottom: 12px;
+
+    height: 40px;
+
+    & > .select {
+      flex: 10%;
+      & > .select__items {
+        top: 39px;
+      }
+    }
+  }
+  &__searchInput {
+    background: url("/assets/UI/searchIcon.svg") no-repeat;
+    background-position: 16px 9px;
+
+    flex: 30%;
+
+    padding-left: 56px;
+
+    border: 1px solid $greyBorder;
+    border-radius: 6px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+  &__mapBox {
+    position: relative;
+
+    top: 0;
+
+    flex: 100%;
+
+    transition: all 0.3s ease;
+
+    &.active {
+      transform: translateY(-166px);
+    }
+
+    & .button {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      width: 150px;
+      height: 47px;
+
+      @include itemsFullCenter;
+
+      font-size: 16px;
+    }
+  }
+  &__map {
+    width: 100%;
+    height: 100%;
+
+    &.active {
+      height: 100vh;
+    }
+  }
+
+  &__dropDownList,
+  &__clearBtn {
+    @include itemsCenter;
+    font-size: 14px;
+
+    border-radius: 6px;
+  }
+  &__dropDownList {
+    padding: {
+      left: 16px;
+      right: 8px;
+    }
+
+    border: 1px solid $greyBorder;
+    & > img {
+      margin-left: 12px;
+    }
+  }
+  &__clearBtn {
+    padding: {
+      left: 8px;
+      right: 16px;
+    }
+    gap: 12px;
+    background: rgba(255, 89, 89, 0.2);
+
+    color: $lightred;
+
+    border: 1px solid $lightred;
+  }
+  &__popUp {
+    position: relative;
+    display: flex;
+    gap: 8px;
+
+    height: 67px;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    &-addImg {
+      padding-top: 15px;
+      width: 100px;
+      height: 50px;
+    }
+
+    & > span {
+      @include fColumn;
+      justify-content: space-between;
+      padding: {
+        top: 8px;
+        bottom: 9px;
+      }
+
+      & > span,
+      & > strong {
+        line-height: normal;
+      }
+      & > span {
+        color: $greyText;
+        font-size: 12px;
+      }
+    }
+  }
+  & .mapboxgl-popup-content {
+    border: 1px solid $greyBorder;
+
+    border-radius: 8px;
+    padding: 0;
+
+    @include mapPopUpShadow;
+
+    overflow: hidden;
+    min-width: 244px;
+
+    & .mapboxgl-popup-close-button {
+      display: none;
+    }
+  }
+  & .mapboxgl-popup-tip {
+    border: none;
+    margin-bottom: 20px;
+  }
+  & ~ .footerMain {
+    display: none;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  &__buttonShow {
+    position: absolute;
+    z-index: 1;
+
+    @include itemsFullCenter;
+    margin: 0 auto;
+
+    background: #dba77b;
+    border-radius: 50%;
+
+    width: 35px;
+    height: 35px;
+
+    top: 5px;
+    right: 48.9%;
+
+    cursor: pointer;
+
+    &-img {
+      padding-bottom: 2px;
+
+      &.hidden {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.section {
+  margin-top: 40px;
+}
+
+.demonstrate_imgs {
+  display: grid;
+  height: 368px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.demonstrate_imgs :first-child {
+  grid-row: span 2;
+}
+
+.secondTitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}

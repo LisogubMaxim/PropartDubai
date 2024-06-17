@@ -1,0 +1,51 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/values.scss";
+
+.whyUsConsultingAccountingPage {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  padding: {
+    top: 42px;
+    bottom: 64px;
+  }
+  & > .blockContainer {
+    flex: 25%;
+    height: 172px;
+    & > img:last-child {
+      position: absolute;
+      right: -43.333px;
+
+      top: -48px;
+
+      opacity: 0.1;
+    }
+    & > span {
+      @include fColumn;
+      gap: 12px;
+
+      color: #000;
+
+      font-size: 22px;
+      font-weight: 500;
+
+      & > span {
+        color: $greyText;
+
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &--darkBlue {
+      background: #191c38;
+      & > span {
+        gap: 0;
+        color: white;
+
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+  }
+}

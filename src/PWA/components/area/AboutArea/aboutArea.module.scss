@@ -1,0 +1,103 @@
+.aboutArea {
+  margin: auto;
+
+  .header {
+    position: relative;
+
+    .imgContainer {
+      height: 400px;
+
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 10;
+
+      .name {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 4px;
+      }
+
+      .price {
+        color: #b7b8bc;
+        font-size: 16px;
+        line-height: 1.375rem;
+      }
+    }
+  }
+
+  .descripton {
+    margin-bottom: 40px;
+
+    .title {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: #0f1121;
+      margin-bottom: 16px;
+    }
+
+    .text {
+      color: #0f1121;
+      font-size: 14px;
+      line-height: 1.25rem;
+    }
+  }
+
+  .about {
+    margin-bottom: 40px;
+  }
+
+  .property {
+    margin-bottom: 48px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+
+      .name {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #0f1121;
+      }
+
+      .more {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333863;
+        text-decoration: underline 0.5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .help {
+    .title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f1121;
+      margin-bottom: 16px;
+    }
+
+    .text {
+      color: #0f1121;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  }
+}
